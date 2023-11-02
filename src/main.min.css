@@ -1231,7 +1231,7 @@ meme-time */
   background-repeat: no-repeat;
   padding-top: 80px;
   background-image: url('../images/bg-sec1.png');
-  overflow: auto;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -1833,6 +1833,9 @@ meme-time */
   background-image: url('../images/bg-2.png');
   width: 100%;
   height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -1981,6 +1984,9 @@ meme-time */
   position: relative;
   background-image: url("../images/bg-2.png");
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
