@@ -1231,7 +1231,7 @@ meme-time */
   background-repeat: no-repeat;
   padding-top: 80px;
   background-image: url('../images/bg-sec1.png');
-  overflow: hidden;
+  overflow: inherit;
   width: 100%;
 }
 
@@ -1890,7 +1890,8 @@ meme-time */
 }
 
 .c-section-4 .wrap-phase .box {
-  width: 513px;
+  width: auto;
+  min-width: 310px;
   height: auto;
   /* background-image: url('../images/bg-chart-one.png'); */
   background-repeat: repeat;
@@ -1899,11 +1900,12 @@ meme-time */
   display: flex;
   align-items: flex-start;
   min-height: 466px;
-  margin: 0 10px;
   border-radius: 20px;
   flex-direction: column;
   border: 2px solid #fff;
   background-color: #18202ea4;
+  margin: auto;
+  padding: 10px 20px;
 }
 
 .c-section-4 .list-link {
@@ -1921,6 +1923,11 @@ meme-time */
 @media (min-width: 1200px) {
   .c-section-4 .wrap-phase .box {
     flex: 1;
+    min-width: 365px;
+    width: auto;
+    margin: 0 10px;
+    padding: 0;
+    text-align: start;
   }
 }
 
@@ -1987,6 +1994,10 @@ meme-time */
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+
 }
 
 @media (min-width: 768px) {

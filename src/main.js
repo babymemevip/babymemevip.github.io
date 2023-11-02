@@ -45,12 +45,23 @@ var mySwiper = new Swiper(".swiper-container", {
 });
 
 // Bắt sự kiện cuộn chuột
+var canScroll = true;
+var scrollDelay = 500; // Thời gian chậm (miligiây)
+
 window.addEventListener('wheel', function (e) {
-  if (e.deltaY > 0) {
-    // Cuộn xuống - chuyển đến trang trình diễn tiếp theo
-    mySwiper.slideNext();
-  } else {
-    // Cuộn lên - chuyển đến trang trình diễn trước
-    mySwiper.slidePrev();
+  if (canScroll) {
+    canScroll = false;
+    
+    setTimeout(function() {
+      canScroll = true;
+    }, scrollDelay);
+
+    if (e.deltaY > 0) {
+      // Cuộn xuống - chuyển đến trang trình diễn tiếp theo
+      mySwiper.slideNext();
+    } else {
+      // Cuộn lên - chuyển đến trang trình diễn trước
+      mySwiper.slidePrev();
+    }
   }
 });
