@@ -24,7 +24,7 @@ $(document).ready(function () {
   });
 });
 
-var menu = ["HOME", "TOKENOMICS", "ROADMAP", "MOONSHEET", "INFO"];
+var menu = ["HOME", "TOKENOMICS", "ROADMAP", "MOONSHEET",  "TRADE", "INFO"];
 var mySwiper = new Swiper(".swiper-container", {
   // If we need pagination
   pagination: {
